@@ -150,6 +150,8 @@ if __name__ == "__main__":
 
     a.plot()
     while True:
+        if not a.route:
+            break
         i = input("请输入障碍点坐标,格式如'2,3',不需要引号, 输入q退出\n")
         if i == 'q':
             break
